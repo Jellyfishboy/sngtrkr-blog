@@ -59,7 +59,7 @@
 	    			<h2>Insights into upcoming artists and releases, alongside new features and updates within the SNGTRKR platform.</h2>
 	    		</div>
 	    		<div class="sevencol last">
-	    			<img src="<?php echo bloginfo('template_directory'); ?>/assets/images/header.png" alt="SNGTRKR" />
+	    			<a href="http://www.sngtrkr.com" target="_blank"><img src="<?php echo bloginfo('template_directory'); ?>/assets/images/header.png" alt="SNGTRKR" /></a>
 	    		</div>
 			</div>
 		</div>
