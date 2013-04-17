@@ -1,8 +1,8 @@
-The new face of Ruckus Media, with mobile support.
+Official blog for SNGTRKR with mobile support.
 
 Author: Tom Dallimore
 Twitter: @billy_dallimore
-Web: http://www.ruckusmedia.co.uk
+Web: http://www.sngtrkr.com
 
 /* SUPPORT HUMANS.TXT */
 

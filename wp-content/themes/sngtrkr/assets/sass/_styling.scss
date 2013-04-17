@@ -2,12 +2,12 @@
 -webkit-font-smoothing: antialiased;
 }
 ::selection {
-	background: $blue;
+	background: $orange;
 	color: #fff;
 	text-shadow: none;
 }
 a {
-	color:$pink;
+	color:$blue;
 	font-family: "MuseoSans-300Italic", Helvetica, Arial, sans-serif;
 	text-decoration:none;
 }
@@ -15,32 +15,19 @@ p {
 	font-size:0.9em;
 }
 h1 {
-	font-size:3em;
-	color:#fff;
-	font-family: "MuseoSlab-700", Helvetica, Arial, sans-serif;
-	text-shadow: 0px 1px 0 #000;
+	font-size:2.1em;
+	color:$orange;
+	font-family: "MuseoSans-500", Helvetica, Arial, sans-serif;
+	text-shadow: 1px 1px 0 rgba(240, 240, 240, 1) !important;
 }
 h2 {
 	color:$darkgray;
-	font-size:1.35em;
-	font-family: "MuseoSlab-500", Helvetica, Arial, sans-serif;
-	text-indent:25px;
-	text-shadow: 1px 1px 0 rgba(240, 240, 240, 1); 
-}
-h3 {
-	margin:25px 0 10px !important;
-	font-size:1.56em;
-	color:#fff;
-	font-family: "MuseoSlab-500", Helvetica, Arial, sans-serif;
-	text-shadow: 0px 1px 0 #000;
+	font-size:1.15em;
+	text-shadow: 0.5px 0.5px 0 rgba(240, 240, 240, 1) !important; 
 }
 i {
 	color:#b3b3b3;
 	text-shadow: 0.5px 0.5px 0 rgba(240, 240, 240, 1); 
-}
-form {
-	overflow:hidden;
-	margin:33px 0 0;
 }
 .inputError {
 	border-color: #b94a48 !important;
@@ -54,39 +41,9 @@ form {
 	font-size:0.8em;
 	color: #b94a48;
 }
-.formcol {
-	width: 47.058823529412%;
-	float: left;
-	margin-right: 5.882352941176%;
-		input[type="text"] {
-			width:90%;
-		}
-}
-textarea {
-	width:95% !important;
-}
 .btn-info {
 	margin-top:16px;
 	float:right;
 	margin-right:3%;
 	font-family: "MuseoSlab-500", Helvetica, Arial, sans-serif;
-}
-.btn-large {
-	float:left;
-}
-.fourcol {
-	position:relative;
-}
-#main_header {
-	line-height:0px;
-	margin:0;
-	text-indent:-9999px;
-}
-.header2 {
-	position:relative;
-		.star {
-			position:absolute;
-			top:12px;
-			left:0px;
-		}
 }

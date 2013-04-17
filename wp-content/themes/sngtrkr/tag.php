@@ -21,4 +21,4 @@ $wp_query->query('tag='.$tags.''.'&showposts=5'.'&paged='.$paged);
 	</div>
 </div>
 <?php endwhile; ?>
-<?php get_footer('no-sidebar'); ?>
+<?php get_footer(); ?>

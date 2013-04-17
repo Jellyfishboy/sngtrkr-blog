@@ -1,74 +1,32 @@
 header {
-	margin-bottom:3em;
-		h1 {
-			line-height:60px;	
-			margin:90px 0 10px;
-		}
-		h2 {
-			color:#fff;
-			text-shadow: 1px 1px 0 #000;
-			text-indent:0;
-			line-height:30px;
-		}
-}
-.hero {
-	background-image:url(../images/hero.png);
-	height:670px;
-	a {
-		color:#fff;
-		text-shadow: 1px 1px 0 #000;
+	h1 {
+		margin-top:28%;
+	}
+	h2 {
+		font-size:1em;
+		line-height:25px;
+	}
+	img {
+		float:right;
+		margin-top:5px;
 	}
 }
-.post_highlight .page-item-8 {
-	a {
-		border-bottom:3px solid $pink;
-		padding-bottom:1px;
-	}
-}
-nav {
-	margin-top:7.2%;
-	position:relative;
-	div {
-		ul {
-			li {
-				display:inline-block;
-				margin-right:50px;
-					a {
-						font-size:1.35em;
-						font-family: "MuseoSlab-500", Helvetica, Arial, sans-serif;
-						text-shadow: 1px 1px 0 rgba(240, 240, 240, 1); 
-						color:$darkgray;
-						@include transition-property(color);
-						@include transition-duration(0.5s);
-						@include transition-timing-function(linear);
-					}
-					a:hover {
-						color:$pink;
-					}
-			}
-			.current_page_item {
-				a {
-					border-bottom:3px solid $pink;
-					padding-bottom:1px;
-				}
-			}
-			li:last-child {
-						margin-right:0px !important;
-			}
-		}
-	}
-}
-.secondary_nav {
-	z-index:2001;
-	width:100%;
-	background-image:url(../images/wallpaper.png);
-	position:fixed;
-	display:none;
-	@include box-shadow(1.5px 1.5px 4px rgba(0, 0, 0, 0.25));
-		nav {
-			margin-top:1.4% !important;
-		}
-		img {
-			display:block;
-		}
+#menu_bar {
+	height:45px;
+	background-color: #1b1b1b;
+	background-image: -moz-linear-gradient(top, #222222, #111111);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+	background-image: -webkit-linear-gradient(top, #222222, #111111);
+	background-image: -o-linear-gradient(top, #222222, #111111);
+	background-image: linear-gradient(to bottom, #222222, #111111);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+	border-color: #252525;
+	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+	box-shadow: 0 1px 10px rgba(0,0,0,.1);
+	margin-top: -30px;
+	z-index: 2001;
+	position: relative;
+	@include box-shadow(1.5px 1.5px 8px rgba(0, 0, 0, 0.65));
 }

@@ -29,7 +29,7 @@
 <!-- The little things -->
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-    <link rel="shortcut icon" href="<?php echo bloginfo('template_directory'); ?>/favicon.png">
+    <link rel="shortcut icon" href="<?php echo bloginfo('template_directory'); ?>/icon.png">
 	<link rel="apple-touch-icon" href="<?php echo bloginfo('template_directory'); ?>/apple-touch-icon-precomposed.png"/> 
     <link rel="author" type="text/plain" href="<?php echo bloginfo('template_directory'); ?>/humans.txt" />  
 <!-- The little things -->
@@ -51,50 +51,19 @@
 </head>
 
 <body <?php body_class(); ?> id="top">
-    <div class="secondary_nav animated">
-    	<div class="container">
-    		<div class="row">
-    			<div class="twocol last">
-    				<img class="small-logo" src="<?php echo bloginfo('template_directory'); ?>/assets/images/small-logo.png" alt="Tom Dallimore"/> 
-    			</div>
-    			<div class="tencol last">
-			    	<nav role="navigation" class="<?php
-    if(in_category('12')) echo 'post_highlight';
-    if(in_category('13')) echo 'post_highlight';
-    if(in_category('14')) echo 'post-highlight';
- ?>">
-			            <?php $args = array( 'menu' => 'mainnav', 'container' => false, 'menu_id' => false, 'menu_class' => false); wp_nav_menu($args); ?>
-			        </nav>
-    			</div>
-    		</div>
-    	</div>
-    </div>
     <header class="<?php if(is_front_page()) echo 'hero'; ?>" role="banner">
     	<div class="container">
     		<div class="row">
-    			<div class="twocol last">
-    				<h1 id="main_header">Tom Dallimore - Ruckus Media - Bristol based Front-end developer and web designer</h1>
-			        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"><img src="<?php echo bloginfo('template_directory'); ?>/assets/images/logo.png" alt="Tom Dallimore"/></a>
-			    </div>
-			    <div class="tencol last">
-			    	<nav role="navigation" class="<?php
-    if(in_category('12')) echo 'post_highlight';
-    if(in_category('13')) echo 'post_highlight';
-    if(in_category('14')) echo 'post-highlight';
- ?>">
-			            <?php $args = array( 'menu' => 'mainnav', 'container' => false, 'menu_id' => false, 'menu_class' => false); wp_nav_menu($args); ?>
-			        </nav>
-			    </div>
+    			<div class="fivecol">
+	    			<h1>Official Blog</h1>
+	    			<h2>Insights into upcoming artists and releases, alongside new features and updates within the SNGTRKR platform.</h2>
+	    		</div>
+	    		<div class="sevencol last">
+	    			<img src="<?php echo bloginfo('template_directory'); ?>/assets/images/header.png" alt="SNGTRKR" />
+	    		</div>
 			</div>
-			<?php if(is_front_page()) echo'<div class="row">
-				<div class="sixcol last">
-				    <h1>Front-end Developer & Web Designer</h1>
-			        <h2>I love what I do. I strive to produce bespoke web design and user experience solutions; to make your web idea a reality.</h2>
-			        <a href="/work"><div class="btn btn-large btn-info">Find out more</div></a>
-			    </div>
-			</div>'; ?>
-			
+		</div>
+		<div id="menu_bar">
 		</div>
     </header>
-    <section class="content">
 	    <div class="container">

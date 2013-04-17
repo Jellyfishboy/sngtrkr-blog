@@ -1,39 +1,33 @@
 @import "compass/reset";
 @import "compass/css3";
-$pink: #cc0066;
-$blue: #abd6db;
-$darkgray: #1a1a1a;
-$gray: #333333;
-$lightgray: #808080;
+$orange: #DC5A24;
+$blue: #45A1C6;
+$darkgray: #333333;
+$gray: #666666;
+$lightgray: #DDDDDD;
+@font-face {
+  font-family: "MuseoSans-100";
+  src: url("/font/MuseoSans-100.otf");
+  src: local("?"),
+    url("/font/MuseoSans-100.otf") format("opentype");
+}
 @font-face {
   font-family: "MuseoSans-300";
-  src: url("../fonts/MuseoSans-300.otf");
+  src: url("/font/MuseoSans-300.otf");
   src: local("?"),
-    url("../fonts/MuseoSans-300.otf") format("opentype");
+    url("/font/MuseoSans-300.otf") format("opentype");
 }
 @font-face {
-  font-family: "MuseoSans-300Italic";
-  src: url("../fonts/MuseoSans-300Italic.otf");
+  font-family: "MuseoSans-500";
+  src: url("/font/MuseoSans_500.otf");
   src: local("?"),
-    url("../fonts/MuseoSans-300Italic.otf") format("opentype");
+    url("/font/MuseoSans_500.otf") format("opentype");
 }
 @font-face {
-  font-family: "MuseoSlab-500";
-  src: url("../fonts/Museo_Slab_500.otf");
+  font-family: "MuseoSans-700";
+  src: url("/font/MuseoSans_700.otf");
   src: local("?"),
-    url("../fonts/Museo_Slab_500.otf") format("opentype");
-}
-@font-face {
-  font-family: "MuseoSlab-500Italic";
-  src: url("../fonts/Museo_Slab_500italic.otf");
-  src: local("?"),
-    url("../fonts/MuseoSans_700.otf") format("opentype");
-}
-@font-face {
-  font-family: "MuseoSlab-700";
-  src: url("../fonts/Museo_Slab_700.otf");
-  src: local("?"),
-    url("../fonts/Museo_Slab_700.otf") format("opentype");
+    url("/font/MuseoSans_700.otf") format("opentype");
 }
 /* ============================== */
 /* ! Layout for desktop version   */
@@ -51,44 +45,19 @@ body {
 	text-shadow: 0.5px 0.5px 0 rgba(240, 240, 240, 1); 
   color:$gray;
 }
-.content {
-	padding-bottom:3em;
-}
 @import "_header.scss";
 @import "_footer.scss";
 @import "_styling.scss";
-@import "_about.scss";
-@import "_work.scss";
 @import "_blog.scss";
 @import "_comments.scss";
-.icon-laptop, .icon-wrench, .icon-edit, .icon-comments, .icon-tablet, .icon-group {
-	font-size:6em;
-}
-.icon-mobile-phone {
-	font-size:4.5em;
-	margin-left:15px;
-}
-.skill_icon {
-	margin:30px 0 10px;
-	text-align:center;
-}
+
 /* ============================= */
 /* ! Layout for tablet  */
 /* ============================= */
 @media only screen and (max-width: 1023px) {
   body {
-  	nav {
-  		margin-top:6.8% !important;
-  	}
-    .secondary_nav {
-      nav {
-        margin-top:0.8% !important;
-      }
-    	.btn-info {
-    		margin-right:2.4%;
-    	}
-    }
-  }
+
+}
 }
 /* ============================= */
 /* ! Layout for mobile version   */
@@ -96,56 +65,7 @@ body {
 
 @media handheld, only screen and (max-width: 767px) {
   body {
-  	#tweeting {
-  		top:10px !important;
-  	}
-    	nav {
-    		margin:0 !important;
-    		padding-top:15px;
-    		border-bottom:1px solid #dddddd;
-    		border-top:1px solid #dddddd;
-  	  		ul {
-  	  			margin:0 0 10px 0;
-  			  	li {
-  			  		margin-right:7% !important;
-  				  		a {
-  				  			font-size:1.25em !important;
-  				  		}
-  			  	}
-  			}
-    	}
-      .secondary_nav {
-        nav {
-          padding:0px;
-          border:0;
-        }
-      }
-      .tags {
-        margin-top:0px !important;
-        a {
-          margin:0 5px 5px 0;
-        }
-      }
-      .pre_nex {
-            a[rel="prev"] {
-              padding-left:5px;
-            }
-            a[rel="next"] {
-              padding-right:5px;
-            }
-      }
-      h2 {
-        font-size:1.25em;
-      }
-      .social {
-        margin:10px 15px 0 0;
-      }
-      .small-logo {
-        display:none !important;
-      }
-      #reply-title {
-        font-size:1.25em;
-      }
+
   }
 }
 

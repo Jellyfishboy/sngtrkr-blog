@@ -24,4 +24,4 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 	</div>
 </div>
 <?php endwhile;?>
-<?php get_footer('no-sidebar'); ?>
+<?php get_footer(); ?>
