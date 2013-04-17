@@ -105,25 +105,29 @@ body {
   background-image: url(../images/wallpaper.png);
   font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
   text-shadow: 0.5px 0.5px 0 #f0f0f0;
-  color: #666666;
+  color: #333333;
 }
 
-/* line 2, ../sass/_header.scss */
+/* line 1, ../sass/_header.scss */
+header {
+  margin-bottom: 3em;
+}
+/* line 3, ../sass/_header.scss */
 header h1 {
   margin-top: 28%;
 }
-/* line 5, ../sass/_header.scss */
+/* line 6, ../sass/_header.scss */
 header h2 {
   font-size: 1em;
   line-height: 25px;
 }
-/* line 9, ../sass/_header.scss */
+/* line 10, ../sass/_header.scss */
 header img {
   float: right;
   margin-top: 5px;
 }
 
-/* line 14, ../sass/_header.scss */
+/* line 15, ../sass/_header.scss */
 #menu_bar {
   height: 31px;
   padding: 7px 0;
@@ -144,11 +148,11 @@ header img {
   box-shadow: 1.5px 1.5px 8px rgba(0, 0, 0, 0.65);
   overflow: hidden;
 }
-/* line 28, ../sass/_header.scss */
+/* line 29, ../sass/_header.scss */
 #menu_bar .container .row {
   position: relative;
 }
-/* line 30, ../sass/_header.scss */
+/* line 31, ../sass/_header.scss */
 #menu_bar .container .row input {
   float: right;
   margin-right: 30px;
@@ -169,7 +173,7 @@ header img {
   -o-transition: none;
   transition: none;
 }
-/* line 44, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 #menu_bar .container .row i {
   color: #666666;
   position: absolute;
@@ -218,7 +222,7 @@ h2 {
 
 /* line 28, ../sass/_styling.scss */
 i {
-  color: #b3b3b3;
+  color: #333333;
   text-shadow: 0.5px 0.5px 0 #f0f0f0;
 }
 
@@ -243,12 +247,25 @@ i {
   color: #b94a48;
 }
 
-/* line 44, ../sass/_styling.scss */
-.btn-info {
-  margin-top: 16px;
-  float: right;
+/* line 2, ../sass/_blog.scss */
+.blog_posts .threecol {
   margin-right: 3%;
-  font-family: "MuseoSlab-500", Helvetica, Arial, sans-serif;
+}
+/* line 5, ../sass/_blog.scss */
+.blog_posts h1 {
+  font-family: "MuseoSans-100", Helvetica, Arial, sans-serif;
+  color: #45a1c6;
+  font-size: 1.9em;
+  margin: 0 0 15px;
+  line-height: 35px;
+}
+/* line 12, ../sass/_blog.scss */
+.blog_posts i {
+  margin-right: 15px;
+}
+/* line 15, ../sass/_blog.scss */
+.blog_posts .large {
+  font-size: 1em;
 }
 
 /* line 2, ../sass/_comments.scss */

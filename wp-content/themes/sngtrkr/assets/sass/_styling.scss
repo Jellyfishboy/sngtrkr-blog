@@ -26,7 +26,7 @@ h2 {
 	text-shadow: 0.5px 0.5px 0 rgba(240, 240, 240, 1) !important; 
 }
 i {
-	color:#b3b3b3;
+	color:$darkgray;
 	text-shadow: 0.5px 0.5px 0 rgba(240, 240, 240, 1); 
 }
 .inputError {
@@ -40,10 +40,4 @@ i {
 .error {
 	font-size:0.8em;
 	color: #b94a48;
-}
-.btn-info {
-	margin-top:16px;
-	float:right;
-	margin-right:3%;
-	font-family: "MuseoSlab-500", Helvetica, Arial, sans-serif;
 }
