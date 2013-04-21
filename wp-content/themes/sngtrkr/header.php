@@ -75,7 +75,7 @@
 		<div id="menu_bar">
 			<div class="container">
 				<div class="row">
-					<input type="text" placeholder="Find more blog posts"><i class="icon-search"></i>
+					<input type="text" placeholder="Find more posts"><i class="icon-search"></i>
 				</div>
 			</div>
 		</div>

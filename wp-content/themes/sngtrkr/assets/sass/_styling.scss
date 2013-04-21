@@ -13,17 +13,20 @@ a {
 }
 p {
 	font-size:0.9em;
+	line-height:2em;
 }
 h1 {
 	font-size:2.1em;
 	color:$orange;
 	font-family: "MuseoSans-500", Helvetica, Arial, sans-serif;
 	text-shadow: 1px 1px 0 rgba(240, 240, 240, 1) !important;
+	font-weight:normal;
 }
 h2 {
 	color:$darkgray;
 	font-size:1.15em;
 	text-shadow: 0.5px 0.5px 0 rgba(240, 240, 240, 1) !important; 
+	font-weight:normal;
 }
 i {
 	color:$darkgray;
