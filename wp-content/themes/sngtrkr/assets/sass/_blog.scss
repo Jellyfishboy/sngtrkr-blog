@@ -37,15 +37,20 @@
 						}
 						span {
 							display:block;
-								div {
-									a {
-										color:$orange;
-										font-family: "MuseoSans-500", Helvetica, Arial, sans-serif;
-									}
-									a:hover {
+								a:first-child {
+									color:$orange;
+									font-family: "MuseoSans-500", Helvetica, Arial, sans-serif;
+								}
+								.artist {
+									color:$darkgray;
+									font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
+										&:hover {
+											color:$blue;
+										}
+								}
+								a:hover {
 										text-decoration:underline;
 									}
-								}
 						}
 				}
 				.actions {
