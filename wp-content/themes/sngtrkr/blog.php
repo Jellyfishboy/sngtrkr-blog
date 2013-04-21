@@ -5,7 +5,7 @@ Template Name: BlogTemp
 ?>
 <?php get_header(); ?>
 <div class="row">
-	<div class="eightcol">
+	<div class="ninecol">
 <?php $wp_query = new WP_Query();
 $wp_query->query('&showposts=5'.'&paged='.$paged);
 while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -14,8 +14,8 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		<div class="row">
 			<div class="threecol last">
 				<?php if (has_post_thumbnail( $post->ID ) ): ?>
-					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-					<img src="<?php echo $image[0]; ?>" />
+					<a href="<?php the_permalink() ?>"><?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+					<img src="<?php echo $image[0]; ?>" /></a>
 				<?php endif; ?>
 			</div>
 			<div class="ninecol last">
@@ -36,7 +36,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 </div>
 <?php endwhile;?>
 </div>
-	<div class="fourcol last">
+	<div class="threecol last">
 		<?php get_sidebar(); ?>
 	</div>
 </div>

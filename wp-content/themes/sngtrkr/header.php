@@ -51,11 +51,20 @@
 </head>
 
 <body <?php body_class(); ?> id="top">
+	<div id="fb-root"></div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=438994976162502";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
     <header class="<?php if(is_front_page()) echo 'hero'; ?>" role="banner">
     	<div class="container">
     		<div class="row">
     			<div class="fivecol">
-	    			<h1>Official Blog</h1>
+	    			<a href="/"><h1>Official Blog</h1></a>
 	    			<h2>Insights into upcoming artists and releases, alongside new features and updates within the SNGTRKR platform.</h2>
 	    		</div>
 	    		<div class="sevencol last">

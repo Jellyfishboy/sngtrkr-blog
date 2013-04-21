@@ -155,7 +155,7 @@ header img {
 /* line 31, ../sass/_header.scss */
 #menu_bar .container .row input {
   float: right;
-  margin-right: 30px;
+  margin-right: 0.1%;
   background-color: #D1D1D1 !important;
   padding: 4px 28px 4px 14px !important;
   color: #666;
@@ -172,12 +172,13 @@ header img {
   -moz-transition: none;
   -o-transition: none;
   transition: none;
+  font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
 }
-/* line 45, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 #menu_bar .container .row i {
   color: #666666;
   position: absolute;
-  right: 38px;
+  right: 10px;
   top: 6px;
 }
 
@@ -247,11 +248,11 @@ i {
   color: #b94a48;
 }
 
-/* line 2, ../sass/_blog.scss */
+/* line 3, ../sass/_blog.scss */
 .blog_posts .threecol {
   margin-right: 3%;
 }
-/* line 5, ../sass/_blog.scss */
+/* line 6, ../sass/_blog.scss */
 .blog_posts h1 {
   font-family: "MuseoSans-100", Helvetica, Arial, sans-serif;
   color: #45a1c6;
@@ -259,13 +260,19 @@ i {
   margin: 0 0 15px;
   line-height: 35px;
 }
-/* line 12, ../sass/_blog.scss */
+/* line 13, ../sass/_blog.scss */
 .blog_posts i {
   margin-right: 15px;
 }
-/* line 15, ../sass/_blog.scss */
+/* line 16, ../sass/_blog.scss */
 .blog_posts .large {
   font-size: 1em;
+}
+/* line 19, ../sass/_blog.scss */
+.blog_posts .elevencol {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 40px;
 }
 
 /* line 2, ../sass/_comments.scss */
@@ -323,6 +330,30 @@ i {
 /* line 42, ../sass/_comments.scss */
 #commentform .required {
   margin-left: 5px;
+}
+
+/* line 1, ../sass/_sidebar.scss */
+#twitter_plugin {
+  padding-bottom: 22px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+/* line 7, ../sass/_sidebar.scss */
+#archives h2 {
+  border-bottom: 1px #d1d1d1 solid;
+  line-height: 28px !important;
+  margin: 15px 0 10px;
+  color: #45a1c6;
+  font-size: 16px;
+}
+/* line 14, ../sass/_sidebar.scss */
+#archives a {
+  color: #333333;
+}
+/* line 16, ../sass/_sidebar.scss */
+#archives a:hover {
+  color: #45a1c6;
 }
 
 /* ============================= */

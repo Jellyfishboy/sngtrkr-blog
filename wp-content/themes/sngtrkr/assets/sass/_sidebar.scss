@@ -1,0 +1,20 @@
+#twitter_plugin {
+	padding-bottom:22px;
+	margin-bottom:30px;
+	border-bottom:1px solid #d1d1d1;
+}
+#archives {
+	h2 {
+		border-bottom:1px #d1d1d1 solid;
+		line-height:28px !important;
+		margin:15px 0 10px;
+		color: $blue;
+		font-size: 16px;
+	}
+	a {
+		color:$darkgray;
+			&:hover {
+				color:$blue;
+			}
+	}
+}

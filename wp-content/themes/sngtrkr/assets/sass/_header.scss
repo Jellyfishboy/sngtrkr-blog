@@ -30,7 +30,7 @@ header {
 				position:relative;
 				input {
 					float:right;
-					margin-right:30px;
+					margin-right:0.1%;
 					background-color: #D1D1D1 !important;
 					padding: 4px 28px 4px 14px !important;
 					color: #666;
@@ -41,11 +41,12 @@ header {
 					-moz-transition: none;
 					-o-transition: none;
 					transition: none;
+					font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
 				}
 				i {
 					color:$gray;
 					position:absolute;
-					right:38px;
+					right:10px;
 					top:6px;
 				}
 			}
