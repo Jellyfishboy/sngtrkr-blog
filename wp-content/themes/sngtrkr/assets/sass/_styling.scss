@@ -44,3 +44,12 @@ i {
 	font-size:0.8em;
 	color: #b94a48;
 }
+.error_pages {
+	text-align:center;
+	h2 {
+		color:$blue;
+		font-size:1.9em;
+		font-family: "MuseoSans-100", Helvetica, Arial, sans-serif;
+		line-height:30px;
+	}
+}
