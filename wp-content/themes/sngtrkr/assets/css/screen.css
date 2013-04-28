@@ -1,13 +1,13 @@
 @font-face {
   font-family: "MuseoSans-100";
-  src: url("/font/MuseoSans-100.otf");
-  src: local("?"), url("/font/MuseoSans-100.otf") format("opentype");
+  src: url("../fonts/MuseoSans-100.otf");
+  src: local("?"), url("../fonts/MuseoSans-100.otf") format("opentype");
 }
 
 @font-face {
   font-family: "MuseoSans-300";
-  src: url("/font/MuseoSans-300.otf");
-  src: local("?"), url("/font/MuseoSans-300.otf") format("opentype");
+  src: url("../fonts/MuseoSans-300.otf");
+  src: local("?"), url("../fonts/MuseoSans-300.otf") format("opentype");
 }
 
 @font-face {
@@ -18,14 +18,14 @@
 
 @font-face {
   font-family: "MuseoSans-500";
-  src: url("/font/MuseoSans_500.otf");
-  src: local("?"), url("/font/MuseoSans_500.otf") format("opentype");
+  src: url("../fonts/MuseoSans_500.otf");
+  src: local("?"), url("../fonts/MuseoSans_500.otf") format("opentype");
 }
 
 @font-face {
   font-family: "MuseoSans-700";
-  src: url("/font/MuseoSans_700.otf");
-  src: local("?"), url("/font/MuseoSans_700.otf") format("opentype");
+  src: url("../fonts/MuseoSans_700.otf");
+  src: local("?"), url("../fonts/MuseoSans_700.otf") format("opentype");
 }
 
 /* ============================== */
@@ -208,6 +208,15 @@ i {
   font-size: 1.9em;
   font-family: "MuseoSans-100", Helvetica, Arial, sans-serif;
   line-height: 30px;
+}
+
+/* line 56, ../sass/_styling.scss */
+#year_title {
+  border-bottom: 1px #d1d1d1 solid;
+  line-height: 28px !important;
+  margin: 15px 0 10px;
+  color: #666666;
+  font-size: 16px;
 }
 
 /* line 1, ../sass/_blog.scss */

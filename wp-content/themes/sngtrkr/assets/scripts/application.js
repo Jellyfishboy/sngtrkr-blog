@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('img').each(function(){
         $(this).removeAttr('width')
         $(this).removeAttr('height');
+    });
     var count = 2;
     $(window).scroll(function(){
             if  ($(window).scrollTop() == $(document).height() - $(window).height()){

@@ -6,15 +6,15 @@ $gray: #666666;
 $lightgray: #DDDDDD;
 @font-face {
   font-family: "MuseoSans-100";
-  src: url("/font/MuseoSans-100.otf");
+  src: url("../fonts/MuseoSans-100.otf");
   src: local("?"),
-    url("/font/MuseoSans-100.otf") format("opentype");
+    url("../fonts/MuseoSans-100.otf") format("opentype");
 }
 @font-face {
   font-family: "MuseoSans-300";
-  src: url("/font/MuseoSans-300.otf");
+  src: url("../fonts/MuseoSans-300.otf");
   src: local("?"),
-    url("/font/MuseoSans-300.otf") format("opentype");
+    url("../fonts/MuseoSans-300.otf") format("opentype");
 }
 @font-face {
   font-family: "MuseoSans-300Italic";
@@ -24,15 +24,15 @@ $lightgray: #DDDDDD;
 }
 @font-face {
   font-family: "MuseoSans-500";
-  src: url("/font/MuseoSans_500.otf");
+  src: url("../fonts/MuseoSans_500.otf");
   src: local("?"),
-    url("/font/MuseoSans_500.otf") format("opentype");
+    url("../fonts/MuseoSans_500.otf") format("opentype");
 }
 @font-face {
   font-family: "MuseoSans-700";
-  src: url("/font/MuseoSans_700.otf");
+  src: url("../fonts/MuseoSans_700.otf");
   src: local("?"),
-    url("/font/MuseoSans_700.otf") format("opentype");
+    url("../fonts/MuseoSans_700.otf") format("opentype");
 }
 /* ============================== */
 /* ! Layout for desktop version   */
