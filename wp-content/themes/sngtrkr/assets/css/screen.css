@@ -122,6 +122,10 @@ header img {
   color: #333333;
 }
 /* line 51, ../sass/_header.scss */
+#menu_bar .container .row #searchsubmit {
+  display: none;
+}
+/* line 54, ../sass/_header.scss */
 #menu_bar .container .row i {
   color: #666666;
   position: absolute;
@@ -211,10 +215,10 @@ i {
 }
 
 /* line 56, ../sass/_styling.scss */
-#year_title {
+#sub_title {
   border-bottom: 1px #d1d1d1 solid;
   line-height: 28px !important;
-  margin: 15px 0 10px;
+  margin: 0 0 10px;
   color: #666666;
   font-size: 16px;
 }

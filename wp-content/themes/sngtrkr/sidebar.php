@@ -5,14 +5,5 @@
 <div class="fb-like" data-href="http://www.facebook.com/sngtrkr" data-width="250" data-show-faces="true"></div>
 <div id="archives">
 	<h2>Archives</h2>
-	<?php ; 
-	$posttags = wp_get_archives(array( 'type' => 'yearly', 'limit' => 6, 'after' => ',', 'order' => 'DESC', 'format' => 'custom' ));
-    if ($posttags) {
-       $taglist = "";
-       foreach($posttags as $tag) {
-           $taglist .=  $tag->name . ', '; 
-       }
-      echo rtrim($taglist, ", ");
-   }
-	?>
+	<?php wp_get_archives(array( 'type' => 'yearly', 'limit' => 6, 'after' => ',', 'order' => 'DESC', 'format' => 'custom' )); ?>
 </div>

@@ -17,7 +17,6 @@ Template Name: BlogTemp
 			<p><?php the_time('dS F Y') ?></p>
 		</div>
 		<?php endwhile;?>
-	<?php posts_nav_link(); ?>
 	</div>
 	<div class="threecol">
 		<?php get_sidebar(); ?>

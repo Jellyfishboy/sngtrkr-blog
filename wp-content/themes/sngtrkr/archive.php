@@ -9,9 +9,9 @@ Archive template
 	</div>
 	<div class="sevencol">
 		<?php $archive_year = get_the_time('Y'); ?>
-		<h2 id="year_title">Yearly archives: <?php echo $archive_year ?></h2>
+		<h2 id="sub_title">Yearly archives: <?php echo $archive_year ?></h2>
 		<?php $wp_query = new WP_Query();
-		$wp_query->query('year='.$archive_year.'&showposts=3'.'&paged='.$paged);
+		$wp_query->query('&year='.$archive_year.'&showposts=3'.'&paged='.$paged);
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		<div class="blog_posts">
 			<a href="<?php the_permalink() ?>"><h1><?php the_title(); ?></h1></a>

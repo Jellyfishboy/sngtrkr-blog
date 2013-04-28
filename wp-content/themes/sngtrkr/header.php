@@ -75,7 +75,7 @@
 		<div id="menu_bar">
 			<div class="container">
 				<div class="row">
-					<input type="text" placeholder="Find more posts"><i class="icon-search"></i>
+					<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 				</div>
 			</div>
 		</div>
