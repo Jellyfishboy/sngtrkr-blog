@@ -7,7 +7,7 @@ Template Name: BlogTemp
 <div class="row">
 	<div class="onecol">
 	</div>
-	<div class="sevencol">
+	<div class="sevencol blog_loop">
 		<?php $wp_query = new WP_Query();
 		$wp_query->query('&showposts=3'.'&paged='.$paged);
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -17,10 +17,7 @@ Template Name: BlogTemp
 			<p><?php the_time('dS F Y') ?></p>
 		</div>
 		<?php endwhile;?>
-	<div class="navigation">
-		<div class="alignleft"><?php previous_posts_link('&laquo; Previous Entries') ?></div>
-		<div class="alignright"><?php next_posts_link('Next Entries &raquo;','') ?></div>
-	</div>
+	<?php posts_nav_link(); ?>
 	</div>
 	<div class="threecol">
 		<?php get_sidebar(); ?>
