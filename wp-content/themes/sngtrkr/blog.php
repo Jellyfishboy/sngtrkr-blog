@@ -9,13 +9,13 @@ Template Name: BlogTemp
 	</div>
 	<div class="sevencol blog_loop">
 		<?php $wp_query = new WP_Query();
-		$wp_query->query('&showposts=3'.'&paged='.$paged);
+		$wp_query->query('&showposts=3');
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-		<div class="blog_posts">
+		<article data-pcount="<?php echo $wp_query->max_num_pages; ?>">
 			<a href="<?php the_permalink() ?>"><h1><?php the_title(); ?></h1></a>
 			<?php the_content(); ?>
 			<p><?php the_time('dS F Y') ?></p>
-		</div>
+		</article>
 		<?php endwhile;?>
 	</div>
 	<div class="threecol">

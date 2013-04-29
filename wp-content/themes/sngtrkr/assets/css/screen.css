@@ -82,7 +82,7 @@ header img {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
   border-color: #252525;
-  margin-top: -30px;
+  margin-top: 5px;
   z-index: 2001;
   position: relative;
   -webkit-box-shadow: 1.5px 1.5px 8px rgba(0, 0, 0, 0.65);
@@ -224,13 +224,13 @@ i {
 }
 
 /* line 1, ../sass/_blog.scss */
-.blog_posts {
+article {
   padding-bottom: 20px;
   border-bottom: 1px solid #d1d1d1;
   margin-bottom: 50px;
 }
 /* line 5, ../sass/_blog.scss */
-.blog_posts h1 {
+article h1 {
   font-family: "MuseoSans-100", Helvetica, Arial, sans-serif;
   color: #45a1c6;
   font-size: 1.9em;
@@ -238,17 +238,17 @@ i {
   line-height: 35px;
 }
 /* line 12, ../sass/_blog.scss */
-.blog_posts p:last-child {
+article p:last-child {
   margin: 0;
   font-family: "MuseoSans-300Italic", Helvetica, Arial, sans-serif;
   color: #666666;
 }
 /* line 17, ../sass/_blog.scss */
-.blog_posts .author {
+article .author {
   margin: 0;
 }
 /* line 20, ../sass/_blog.scss */
-.blog_posts .release {
+article .release {
   padding: 10px;
   overflow: hidden;
   background-color: #f5f5f5;
@@ -265,53 +265,127 @@ i {
   box-shadow: inset 0 0 0 1px #f9f9f9;
 }
 /* line 29, ../sass/_blog.scss */
-.blog_posts .release .info {
+article .release .info {
   float: left;
   width: 70%;
 }
 /* line 32, ../sass/_blog.scss */
-.blog_posts .release .info img {
+article .release .info img {
   float: left;
   margin-right: 15px;
   height: 75px;
   width: 75px;
 }
 /* line 38, ../sass/_blog.scss */
-.blog_posts .release .info span {
+article .release .info span {
   display: block;
 }
 /* line 40, ../sass/_blog.scss */
-.blog_posts .release .info span a:first-child {
+article .release .info span a:first-child {
   color: #dc5a24;
   font-family: "MuseoSans-500", Helvetica, Arial, sans-serif;
 }
 /* line 44, ../sass/_blog.scss */
-.blog_posts .release .info span .artist {
+article .release .info span .artist {
   color: #333333;
   font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
 }
 /* line 47, ../sass/_blog.scss */
-.blog_posts .release .info span .artist:hover {
+article .release .info span .artist:hover {
   color: #45a1c6;
 }
 /* line 51, ../sass/_blog.scss */
-.blog_posts .release .info span a:hover {
+article .release .info span a:hover {
   text-decoration: underline;
 }
 /* line 56, ../sass/_blog.scss */
-.blog_posts .release .actions {
+article .release .actions {
   float: right;
   margin-top: 23px;
 }
 /* line 59, ../sass/_blog.scss */
-.blog_posts .release .actions div {
+article .release .actions div {
   margin-right: 8px;
 }
 /* line 61, ../sass/_blog.scss */
-.blog_posts .release .actions div i {
+article .release .actions div i {
   position: relative;
   top: 1px;
   margin-right: 5px;
+}
+
+/* line 70, ../sass/_blog.scss */
+.single_post {
+  margin-bottom: 0px;
+}
+
+/* line 73, ../sass/_blog.scss */
+#pre_nex {
+  padding: 15px 0;
+  border-bottom: 1px solid #d1d1d1;
+  overflow: hidden;
+  margin-bottom: 30px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 82, ../sass/_blog.scss */
+#pre_nex a[rel="prev"] {
+  float: left;
+  padding-left: 20px;
+}
+/* line 85, ../sass/_blog.scss */
+#pre_nex a[rel="prev"] i {
+  left: 0px;
+}
+/* line 89, ../sass/_blog.scss */
+#pre_nex a[rel="next"] {
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+}
+/* line 93, ../sass/_blog.scss */
+#pre_nex a[rel="next"] i {
+  right: 0px;
+}
+/* line 97, ../sass/_blog.scss */
+#pre_nex a {
+  width: 40%;
+}
+/* line 99, ../sass/_blog.scss */
+#pre_nex a i {
+  font-size: 1.5em;
+  color: #666666;
+}
+/* line 103, ../sass/_blog.scss */
+#pre_nex a div {
+  font-family: "MuseoSans-300", Helvetica, Arial, sans-serif !important;
+  color: #666666;
+}
+/* line 107, ../sass/_blog.scss */
+#pre_nex a span {
+  font-family: "MuseoSans-500", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+/* line 111, ../sass/_blog.scss */
+#pre_nex a:hover > span {
+  color: #45a1c6 !important;
+}
+/* line 115, ../sass/_blog.scss */
+#pre_nex:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 
 /* line 2, ../sass/_comments.scss */
