@@ -4,4 +4,4 @@
                     <?php the_content(); ?>
                     <p><?php the_time('dS F Y') ?></p>
                 </article>
-<?php endwhile; // End the loop. Whew. ?>
+<?php endwhile; ?>
