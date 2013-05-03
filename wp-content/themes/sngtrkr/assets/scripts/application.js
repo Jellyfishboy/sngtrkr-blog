@@ -8,26 +8,51 @@ $(document).ready(function () {
     });
     var count = 2;
     var total = $('article').data("pcount");
+    var a_year = $('#sub_title').data("year");  
+    var s_query = $('#sub_title').data("search");
     $(window).scroll(function(){
             if  ($(window).scrollTop() == $(document).height() - $(window).height()){
                 if(count > total) {
                     return false;
                 } else {
-                   loadArticle(count);
+                   loadArticle(count, a_year, s_query);
                 }
                count++;
             }
     }); 
 
-    function loadArticle(pageNumber){    
-            $.ajax({
-                url: "http://localhost:8888/wp-admin/admin-ajax.php",
-                type:'POST',
-                data: "action=infinite_scroll&page_no="+ pageNumber + '&loop_file=loop', 
-                success: function(html){
-                    $(".blog_loop").append(html);   // This will be the div where our content will be loaded
+    function loadArticle(pageNumber, year, query){  
+            if (year == null && query == null) {
+                    $.ajax({
+                        url: "http://localhost:8888/wp-admin/admin-ajax.php",
+                        type:'POST',
+                        data: "action=infinite_scroll&page_no="+ pageNumber + "&loop_file=loop", 
+                        success: function(html){
+                            $(".blog_loop").append(html);   // This will be the div where our content will be loaded
+                        }
+                    });
+                    // console.log("normal loop");
+                } else if (year != null) {
+                    $.ajax({
+                        url: "http://localhost:8888/wp-admin/admin-ajax.php",
+                        type:'POST',
+                        data: "action=infinite_scroll&page_no="+ pageNumber + "&loop_file=loop&archive_year="+ year, 
+                        success: function(html){
+                            $(".blog_loop").append(html);   // This will be the div where our content will be loaded
+                        }
+                    });
+                    // console.log("archive loop");
+                } else if (query != null) {    
+                    $.ajax({
+                        url: "http://localhost:8888/wp-admin/admin-ajax.php",
+                        type:'POST',
+                        data: "action=infinite_scroll&page_no="+ pageNumber + "&loop_file=loop&search_query="+ query, 
+                        success: function(html){
+                            $(".blog_loop").append(html);   // This will be the div where our content will be loaded
+                        }
+                    });
+                    // console.log("search loop");
                 }
-            });
         return false;
     }
  //    var top = $('#menu_bar').offset().top - parseFloat($('#menu_bar').css('marginTop').replace(/auto/, 0));

@@ -9,11 +9,11 @@ Archive template
 	</div>
 	<div class="sevencol blog_loop">
 		<?php $archive_year = get_the_time('Y'); ?>
-		<h2 id="sub_title">Yearly archives: <?php echo $archive_year ?></h2>
+		<h2 id="sub_title" data-year="<?php echo $archive_year?>">Yearly archives: <?php echo $archive_year ?></h2>
 		<?php $wp_query = new WP_Query();
-		$wp_query->query('&year='.$archive_year.'&showposts=3');
+		$wp_query->query('&year='.$archive_year.'');
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-		<article>
+		<article data-pcount="<?php echo $wp_query->max_num_pages; ?>">
 			<a href="<?php the_permalink() ?>"><h1><?php the_title(); ?></h1></a>
 			<?php the_content(); ?>
 			<p><?php the_time('dS F Y') ?></p>

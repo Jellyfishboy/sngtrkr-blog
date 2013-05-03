@@ -10,9 +10,9 @@ Search results
 	<div class="sevencol blog_loop">
 		<?php if ( have_posts() ) : ?>
 			<?php $s_query = get_search_query(); ?>
-			<h2 id="sub_title">Search results for: <?php echo $s_query; ?></h2>
+			<h2 id="sub_title" data-search="<?php echo $s_query ?>">Search results for: <?php echo $s_query; ?></h2>
 			<?php $wp_query = new WP_Query();
-			$wp_query->query('&showposts=3&s='.$s_query.'');
+			$wp_query->query('&s='.$s_query.'');
 			while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 			<article>
 				<a href="<?php the_permalink() ?>"><h1><?php the_title(); ?></h1></a>

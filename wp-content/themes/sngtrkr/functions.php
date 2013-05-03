@@ -88,9 +88,16 @@ function wp_infinitepaginate(){
     $loopFile        = $_POST['loop_file'];
     $paged           = $_POST['page_no'];
     $posts_per_page  = get_option('posts_per_page');
+    $archive_year	 = $_POST['archive_year'];
+    $search_query	 = $_POST['search_query'];
 
-    # Load the posts
-    query_posts(array('paged' => $paged )); 
+    if ($archive_year == null && $search_query == null) {
+	    query_posts(array('paged' => $paged )); 
+	} elseif ($archive_year != null) {
+		query_posts(array('paged' => $paged, 'year' => $archive_year ));
+	} elseif ($search_query != null) {
+		query_posts(array('paged' => $paged, 's' => $search_query ));
+	}
     get_template_part( $loopFile );
 
     exit;
