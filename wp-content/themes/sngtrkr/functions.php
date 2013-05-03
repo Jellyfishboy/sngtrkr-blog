@@ -90,13 +90,16 @@ function wp_infinitepaginate(){
     $posts_per_page  = get_option('posts_per_page');
     $archive_year	 = $_POST['archive_year'];
     $search_query	 = $_POST['search_query'];
+    $post_author	 = $_POST['author'];
 
-    if ($archive_year == null && $search_query == null) {
+    if ($archive_year == null && $search_query == null && $post_author == null) {
 	    query_posts(array('paged' => $paged )); 
 	} elseif ($archive_year != null) {
 		query_posts(array('paged' => $paged, 'year' => $archive_year ));
 	} elseif ($search_query != null) {
 		query_posts(array('paged' => $paged, 's' => $search_query ));
+	} else if ($post_author != null) {
+		query_posts(array('paged' => $paged, 'author' => $post_author ));
 	}
     get_template_part( $loopFile );
 

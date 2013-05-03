@@ -2,6 +2,7 @@ article {
 	padding-bottom:20px;
 	border-bottom:1px solid #d1d1d1;
 	margin-bottom:50px;
+	position:relative;
 		h1 {
 			font-family: "MuseoSans-100", Helvetica, Arial, sans-serif;
 			color:$blue;
@@ -15,7 +16,29 @@ article {
 			color:$gray;
 		}
 		.author {
-			margin:0;
+			position:absolute;
+			right:0px;
+			top:6px;
+			font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
+				div {
+					color:#666666;
+					background-color:#e6e6e6;
+					padding:3px 10px 3px 35px;
+					font-size: 0.75em;
+					position:relative;
+					@include transition-property(background, color);
+					@include transition-duration(0.5s, 0.2s);
+					@include transition-timing-function(linear, linear);
+						&:hover {
+							color:#fff;
+							background-color:$orange;
+						}
+						img {
+							top:0px;
+							left:0px;
+							position:absolute;	
+						}
+				}
 		}
 		.release {
 			padding:10px;

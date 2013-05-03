@@ -228,8 +228,9 @@ article {
   padding-bottom: 20px;
   border-bottom: 1px solid #d1d1d1;
   margin-bottom: 50px;
+  position: relative;
 }
-/* line 5, ../sass/_blog.scss */
+/* line 6, ../sass/_blog.scss */
 article h1 {
   font-family: "MuseoSans-100", Helvetica, Arial, sans-serif;
   color: #45a1c6;
@@ -237,17 +238,51 @@ article h1 {
   margin: 0 0 15px;
   line-height: 35px;
 }
-/* line 12, ../sass/_blog.scss */
+/* line 13, ../sass/_blog.scss */
 article p:last-child {
   margin: 0;
   font-family: "MuseoSans-300Italic", Helvetica, Arial, sans-serif;
   color: #666666;
 }
-/* line 17, ../sass/_blog.scss */
+/* line 18, ../sass/_blog.scss */
 article .author {
-  margin: 0;
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
 }
-/* line 20, ../sass/_blog.scss */
+/* line 23, ../sass/_blog.scss */
+article .author div {
+  color: #666666;
+  background-color: #e6e6e6;
+  padding: 3px 10px 3px 35px;
+  font-size: 0.75em;
+  position: relative;
+  -webkit-transition-property: background, color;
+  -moz-transition-property: background, color;
+  -o-transition-property: background, color;
+  transition-property: background, color;
+  -webkit-transition-duration: 0.5s, 0.2s;
+  -moz-transition-duration: 0.5s, 0.2s;
+  -o-transition-duration: 0.5s, 0.2s;
+  transition-duration: 0.5s, 0.2s;
+  -webkit-transition-timing-function: linear, linear;
+  -moz-transition-timing-function: linear, linear;
+  -o-transition-timing-function: linear, linear;
+  transition-timing-function: linear, linear;
+}
+/* line 32, ../sass/_blog.scss */
+article .author div:hover {
+  color: #fff;
+  background-color: #dc5a24;
+}
+/* line 36, ../sass/_blog.scss */
+article .author div img {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+/* line 43, ../sass/_blog.scss */
 article .release {
   padding: 10px;
   overflow: hidden;
@@ -264,62 +299,62 @@ article .release {
   -moz-box-shadow: inset 0 0 0 1px #f9f9f9;
   box-shadow: inset 0 0 0 1px #f9f9f9;
 }
-/* line 29, ../sass/_blog.scss */
+/* line 52, ../sass/_blog.scss */
 article .release .info {
   float: left;
   width: 70%;
 }
-/* line 32, ../sass/_blog.scss */
+/* line 55, ../sass/_blog.scss */
 article .release .info img {
   float: left;
   margin-right: 15px;
   height: 75px;
   width: 75px;
 }
-/* line 38, ../sass/_blog.scss */
+/* line 61, ../sass/_blog.scss */
 article .release .info span {
   display: block;
 }
-/* line 40, ../sass/_blog.scss */
+/* line 63, ../sass/_blog.scss */
 article .release .info span a:first-child {
   color: #dc5a24;
   font-family: "MuseoSans-500", Helvetica, Arial, sans-serif;
 }
-/* line 44, ../sass/_blog.scss */
+/* line 67, ../sass/_blog.scss */
 article .release .info span .artist {
   color: #333333;
   font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
 }
-/* line 47, ../sass/_blog.scss */
+/* line 70, ../sass/_blog.scss */
 article .release .info span .artist:hover {
   color: #45a1c6;
 }
-/* line 51, ../sass/_blog.scss */
+/* line 74, ../sass/_blog.scss */
 article .release .info span a:hover {
   text-decoration: underline;
 }
-/* line 56, ../sass/_blog.scss */
+/* line 79, ../sass/_blog.scss */
 article .release .actions {
   float: right;
   margin-top: 23px;
 }
-/* line 59, ../sass/_blog.scss */
+/* line 82, ../sass/_blog.scss */
 article .release .actions div {
   margin-right: 8px;
 }
-/* line 61, ../sass/_blog.scss */
+/* line 84, ../sass/_blog.scss */
 article .release .actions div i {
   position: relative;
   top: 1px;
   margin-right: 5px;
 }
 
-/* line 70, ../sass/_blog.scss */
+/* line 93, ../sass/_blog.scss */
 .single_post {
   margin-bottom: 0px;
 }
 
-/* line 73, ../sass/_blog.scss */
+/* line 96, ../sass/_blog.scss */
 #pre_nex {
   padding: 15px 0;
   border-bottom: 1px solid #d1d1d1;
@@ -340,49 +375,49 @@ article .release .actions div i {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 82, ../sass/_blog.scss */
+/* line 105, ../sass/_blog.scss */
 #pre_nex a[rel="prev"] {
   float: left;
   padding-left: 20px;
 }
-/* line 85, ../sass/_blog.scss */
+/* line 108, ../sass/_blog.scss */
 #pre_nex a[rel="prev"] i {
   left: 0px;
 }
-/* line 89, ../sass/_blog.scss */
+/* line 112, ../sass/_blog.scss */
 #pre_nex a[rel="next"] {
   float: right;
   text-align: right;
   padding-right: 20px;
 }
-/* line 93, ../sass/_blog.scss */
+/* line 116, ../sass/_blog.scss */
 #pre_nex a[rel="next"] i {
   right: 0px;
 }
-/* line 97, ../sass/_blog.scss */
+/* line 120, ../sass/_blog.scss */
 #pre_nex a {
   width: 40%;
 }
-/* line 99, ../sass/_blog.scss */
+/* line 122, ../sass/_blog.scss */
 #pre_nex a i {
   font-size: 1.5em;
   color: #666666;
 }
-/* line 103, ../sass/_blog.scss */
+/* line 126, ../sass/_blog.scss */
 #pre_nex a div {
   font-family: "MuseoSans-300", Helvetica, Arial, sans-serif !important;
   color: #666666;
 }
-/* line 107, ../sass/_blog.scss */
+/* line 130, ../sass/_blog.scss */
 #pre_nex a span {
   font-family: "MuseoSans-500", Helvetica, Arial, sans-serif !important;
   color: #333333;
 }
-/* line 111, ../sass/_blog.scss */
+/* line 134, ../sass/_blog.scss */
 #pre_nex a:hover > span {
   color: #45a1c6 !important;
 }
-/* line 115, ../sass/_blog.scss */
+/* line 138, ../sass/_blog.scss */
 #pre_nex:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
