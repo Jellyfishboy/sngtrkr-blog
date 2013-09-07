@@ -29,7 +29,7 @@ namespace :wordpress do
     end
     desc "Copy production config file across"
     task :production_config, :roles => :app do 
-        run "cp /home/wp-config-production.php /home/wordpress/current"
+        run "cp /home/config/wp-config-production.php /home/wordpress/current"
     end
     desc "Set sitemap file permissions"
     task :sitemap_permissions, :roles => :app do
