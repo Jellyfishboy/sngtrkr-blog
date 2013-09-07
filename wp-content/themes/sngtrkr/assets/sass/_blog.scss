@@ -15,31 +15,6 @@ article {
 			font-family: "MuseoSans-300Italic", Helvetica, Arial, sans-serif;
 			color:$gray;
 		}
-		.author {
-			position:absolute;
-			right:0px;
-			top:6px;
-			font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
-				div {
-					color:#666666;
-					background-color:#e6e6e6;
-					padding:3px 10px 3px 35px;
-					font-size: 0.75em;
-					position:relative;
-					@include transition-property(background, color);
-					@include transition-duration(0.5s, 0.2s);
-					@include transition-timing-function(linear, linear);
-						&:hover {
-							color:#fff;
-							background-color:$orange;
-						}
-						img {
-							top:0px;
-							left:0px;
-							position:absolute;	
-						}
-				}
-		}
 		.release {
 			padding:10px;
 			overflow:hidden;
@@ -87,6 +62,36 @@ article {
 									margin-right: 5px;
 								}
 						}
+				}
+		}
+		.mobile_author {
+			display:none;
+			position: relative;
+			top:0px;
+		}
+}
+.author {
+	position:absolute;
+	right:0px;
+	top:6px;
+	font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
+		div {
+			color:#666666;
+			background-color:#e6e6e6;
+			padding:3px 10px 3px 35px;
+			font-size: 0.75em;
+			position:relative;
+			@include transition-property(background, color);
+			@include transition-duration(0.5s, 0.2s);
+			@include transition-timing-function(linear, linear);
+				&:hover {
+					color:#fff;
+					background-color:$orange;
+				}
+				img {
+					top:0px;
+					left:0px;
+					position:absolute;	
 				}
 		}
 }

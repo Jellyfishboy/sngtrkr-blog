@@ -103,6 +103,12 @@ body {
         }
       }
     }
+    article {
+        .author div {
+        padding:1px 10px 0px 35px;
+        width:30px;
+      }
+    }
   }
 }
 /* ============================= */
@@ -133,6 +139,14 @@ body {
         i {
           right:10.7% !important;
         }
+      }
+    }
+    article {
+      .mobile_author {
+        display: block;
+      }
+      .desktop_author {
+        display: none;
       }
     }
   }
