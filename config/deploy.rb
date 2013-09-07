@@ -1,7 +1,7 @@
 set :application, 'sngtrkr_blog'
 set :user, 'root'
 set :scm, 'git'
-set :repository, 'git@github.com:Jellyfishboy/sngtrkr_blog.git'
+set :repository, 'git@github.com:Jellyfishboy/sngtrkr_blog.git '
 set :scm_verbose, true
 set :domain, '82.196.15.184'
 set :deploy_to, '/home/wordpress'
