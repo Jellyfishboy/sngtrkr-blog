@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-    <div class="onecol">
-    </div>
+    <div class="onecol"></div>
     <div class="sevencol">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <article class="single_post">
@@ -15,14 +14,13 @@
             <?php next_post_link('%link', '<i class="icon-chevron-right"></i><div>Next post</div><span>%title</span>', FALSE, '3'); ?>
         </div>
         <?php comments_template(); ?>
+    <?php endwhile; // end of the loop. ?>
     </div>
     <div class="threecol">
         <?php get_sidebar(); ?>
     </div>
-    <div class="onecol last">
-    </div>
+    <div class="onecol last"></div>
 </div>
-    <?php endwhile; // end of the loop. ?>
 
 
 <?php get_footer(); ?>
