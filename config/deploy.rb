@@ -18,11 +18,28 @@ set :deploy_via, :remote_cache
 set :copy_exclude, [".git", ".DS_Store", ".gitignore", ".gitmodules"]
 set :use_sudo, false
 
+# Paths
+set :asset_path, "assets"
+set :theme_path, "wp-content/themes/sngtrkr"
+set :coffee_to_path, "scripts"
+set :coffee_dir, "src/coffee"
+set :js_file_name, "application.js"
+
 # additional settings
 default_run_options[:pty] = true
 
 
 namespace :wordpress do
+    desc "Compile Sass/Compass"
+        task :compile_sass, :roles => :app do
+            run_locally( "cd #{theme_path}/#{asset_path}; compass compile" )
+            upload( "#{theme_path}/#{asset_path}/css", "#{release_path}/#{theme_path}/#{asset_path}/css" )
+    end
+    desc "Compile Coffeescript"
+        task :compile_coffee, :roles => :app do
+            run_locally( "cd #{theme_path}/#{asset_path}; coffee -c -o #{coffee_to_path} -j #{js_file_name} #{coffee_dir}")
+            upload( "#{theme_path}/#{asset_path}/js", "#{release_path}/#{theme_path}/#{asset_path}/js" )
+    end
     desc "Setup symlinks for a wordpress project"
     task :create_symlinks, :roles => :app do
         run "ln -nfs #{shared_path}/uploads #{release_path}/wp-content/uploads"
@@ -36,7 +53,14 @@ namespace :wordpress do
         run "chmod 666 /home/wordpress/current/sitemap.xml"
         run "chmod 666 /home/wordpress/current/sitemap.xml.gz"
     end
+    desc "Set root folder permissions to www-data"
+    task :root_permissions, :roles => :app do
+        run "chown -R www-data:www-data /home/wordpress"
+    end
 end
-after "deploy:create_symlink", "wordpress:create_symlinks"
+after "deploy:create_symlink", "wordpress:compile_sass"
+after "wordpress:compile_sass", "wordpress:compile_coffee"
+after "wordpress:compile_coffee", "wordpress:create_symlinks"
 after "wordpress:create_symlinks", "wordpress:production_config"
 after "wordpress:production_config", "wordpress:sitemap_permissions"
+after "wordpress:sitemap_permissions", "wordpress:root_permissions"
