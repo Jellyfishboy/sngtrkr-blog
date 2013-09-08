@@ -38,7 +38,7 @@ namespace :wordpress do
     desc "Compile Coffeescript"
         task :compile_coffee, :roles => :app do
             run_locally( "cd #{theme_path}/#{asset_path}; coffee -c -o #{coffee_to_path} -j #{js_file_name} #{coffee_dir}")
-            upload( "#{theme_path}/#{asset_path}/scripts/#{js_file_name}", "#{release_path}/#{theme_path}/#{asset_path}/scripts" )
+            upload( "#{theme_path}/#{asset_path}/scripts", "#{release_path}/#{theme_path}/#{asset_path}/scripts" )
     end
     desc "Setup symlinks for a wordpress project"
     task :create_symlinks, :roles => :app do
