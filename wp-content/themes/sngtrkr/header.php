@@ -29,8 +29,7 @@
 <!-- The little things -->
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-    <link rel="shortcut icon" href="<?php echo bloginfo('template_directory'); ?>/icon.png">
-	<link rel="apple-touch-icon" href="<?php echo bloginfo('template_directory'); ?>/apple-touch-icon-precomposed.png"/> 
+    <link rel="shortcut icon" type="image/ico" href="<?php echo bloginfo('template_directory'); ?>/assets/images/icon.png">
     <link rel="author" type="text/plain" href="<?php echo bloginfo('template_directory'); ?>/humans.txt" />  
 <!-- The little things -->
 
