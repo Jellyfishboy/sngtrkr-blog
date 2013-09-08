@@ -16,7 +16,7 @@
         </div>
         <?php comments_template(); ?>
     </div>
-    <div class="threecol last">
+    <div class="threecol">
         <?php get_sidebar(); ?>
     </div>
     <div class="onecol last">
