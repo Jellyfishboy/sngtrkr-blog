@@ -318,14 +318,14 @@ article .mobile_author {
 }
 
 /* line 73, ../src/sass/_blog.scss */
-.author {
+.author_icon {
   position: absolute;
   right: 0px;
   top: 6px;
   font-family: "MuseoSans-300", Helvetica, Arial, sans-serif;
 }
 /* line 78, ../src/sass/_blog.scss */
-.author div {
+.author_icon div {
   color: #666666;
   background-color: #e6e6e6;
   padding: 3px 10px 3px 35px;
@@ -345,12 +345,12 @@ article .mobile_author {
   transition-timing-function: linear, linear;
 }
 /* line 87, ../src/sass/_blog.scss */
-.author div:hover {
+.author_icon div:hover {
   color: #fff;
   background-color: #dc5a24;
 }
 /* line 91, ../src/sass/_blog.scss */
-.author div img {
+.author_icon div img {
   top: 0px;
   left: 0px;
   position: absolute;
@@ -555,7 +555,7 @@ article .mobile_author {
     right: 10.3% !important;
   }
   /* line 107, ../src/sass/screen.scss */
-  body article .author div {
+  body article .author_icon div {
     padding: 1px 10px 0px 35px;
     width: 30px;
   }

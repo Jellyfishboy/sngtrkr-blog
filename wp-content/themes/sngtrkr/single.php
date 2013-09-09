@@ -4,10 +4,21 @@
     <div class="sevencol">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <article class="single_post">
-            <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="author"><div><?php echo get_avatar( get_the_author_email(), '25' ); ?><?php the_author_meta('user_firstname'); ?></div></a>
+            <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="author_icon desktop_author">
+                <div>
+                    <?php echo get_avatar( get_the_author_email(), '25' ); ?>
+                    <?php the_author_meta('user_firstname'); ?>
+                </div>
+            </a>
             <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>
             <p><?php the_time('dS F Y') ?></p>
+            <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="author_icon mobile_author">
+                <div>
+                    <?php echo get_avatar( get_the_author_email(), '25' ); ?>
+                    <?php the_author_meta('user_firstname'); ?>
+                </div>
+            </a>
         </article>
         <div id="pre_nex">
             <?php previous_post_link('%link', '<i class="icon-chevron-left"></i><div>Previous post</div><span>%title</span>', FALSE, '3'); ?> 
